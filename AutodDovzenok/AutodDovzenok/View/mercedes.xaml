@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutodDovzenok.View.mercedes">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" FontSize="Large" Text="Модели машин марки Mercedes" />
+            <Image x:Name="PhotosMercedes" Source="Mercedes-AMGGT4.jpg" HeightRequest="250"/>
+            <Picker x:Name="modelMercedes" SelectedIndexChanged="modelMercedes_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Mercedes-AMG GT 4</x:String>
+                    <x:String>CLS купе</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

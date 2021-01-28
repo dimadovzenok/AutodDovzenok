@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutodDovzenok.View.alfaRomeo">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" FontSize="Large" Text="Модели машин марки Alfa Romeo" />
+            <Image x:Name="PhotosAlfaRomeo" Source="alfaRomeoGiulia.jpg" HeightRequest="250"/>
+            <Picker x:Name="modelAlfaRomeo" SelectedIndexChanged="modelAlfaRomeo_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Alfa Romeo Giulia</x:String>
+                    <x:String>Alfa Romeo Stelvio</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
